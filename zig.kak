@@ -4,15 +4,15 @@ hook global BufCreate .*\.zig %{
   set-option buffer filetype zig
 }
 
-add-highlighter shared/zig/double-string fill string
-add-highlighter shared/zig/single-string fill string
-add-highlighter shared/zig/comment fill comment
-
 add-highlighter shared/ regions -default code zig \
   double-string '"'  (?<!\\)(\\\\)*"         '' \
   single-string "'" (?<!\\)(\\\\)*' '' \
   comment-line '//' '$' \
   multiline-string '\\\\' '$' '' \
+
+add-highlighter shared/zig/double-string fill string
+add-highlighter shared/zig/single-string fill string
+add-highlighter shared/zig/comment fill comment
 
 add-highlighter shared/zig/storage regex 'const|var|extern|packed|export|pub|noalias|inline|comptime|nakedcc|stdcallcc|volatile|align|section' 0:attribute
 add-highlighter shared/zig/structure regex 'struct|enum|union' 0:keyword
