@@ -1,6 +1,6 @@
 # zig.kak
 
-Syntax highlighting for the [Zig language][zig] in the [Kakoune editor][kakoune], for those who like to pair their new-age hipster bullshit language with a new-age hipster bullshit text editor.
+Syntax highlighting for the [Zig language][zig] in the [Kakoune editor][kakoune], for those who like to pair their new-age hipster bullshit programming language with a new-age hipster bullshit text editor.
 
 ### Screenshot:
 
