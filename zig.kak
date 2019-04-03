@@ -29,5 +29,5 @@ addhl shared/zig/code/hex regex '\b0x[a-fA-F0-9]+([a-fA-F0-9]+([pP][+-]?[0-9]+)?
 addhl shared/zig/code/oct regex '\b0o[0-7]+'                                        0:value
 addhl shared/zig/code/bin regex '\b0b[01]+(.[01]+([eE][\+-]?[0-9]+)?)='             0:value
 
-hook -group zig-highlight global WinSetOption filetype=zig %{ add-highlighter window ref zig }
+hook -group zig-highlight global WinSetOption filetype=zig %{ add-highlighter window/ ref zig }
 hook -group zig-highlight global WinSetOption filetype=(?!zig).* %{ remove-highlighter window/zig }
